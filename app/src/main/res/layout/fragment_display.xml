@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayFragment"
+    android:background="@color/colorBackground"
+    android:elevation="4dp"
+    android:paddingBottom="24dp"
+    android:paddingTop="24dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    
+    <ImageButton
+        android:id="@+id/imageButtonDelete"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_clear_black_36dp"
+        style="@style/ImageButtonDisplay"
+        />
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_toEndOf="@+id/imageButtonDelete"
+        style="@style/ScrollViewDisplay"
+        >
+
+        <TextView
+            android:id="@+id/textDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="end"
+            tools:text="985+600"
+            style="@style/TextViewDisplay"
+            />
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
